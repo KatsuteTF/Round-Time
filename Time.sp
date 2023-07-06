@@ -174,7 +174,7 @@ public Action OnTimeAddedDeferred(const Handle timer, const int time){
             SetRoundTime(set);
         }
     }
-    return Plugin_Continue;
+    return Plugin_Handled;
 }
 
 public Action OnAddTime(const int client, const int args){
@@ -223,7 +223,7 @@ public Action OnAddTime(const int client, const int args){
             }
         }
     }
-    return Plugin_Continue;
+    return Plugin_Handled;
 }
 
 public Action OnSetTime(const int client, const int args){
@@ -260,7 +260,7 @@ public Action OnSetTime(const int client, const int args){
             }
         }
     }
-    return Plugin_Continue;
+    return Plugin_Handled;
 }
 
 //
