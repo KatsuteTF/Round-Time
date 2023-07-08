@@ -270,7 +270,9 @@ public void AddTime(const int ent, const int seconds){
 }
 
 public void AddTeamTime(const int ent, const int seconds){
-    SetVariantInt(seconds);
+    char buf[32];
+    Format(buf, sizeof(buf), "0 %i", seconds);
+    SetVariantString(buf);
     AcceptEntityInput(ent, "AddTeamTime");
 }
 
